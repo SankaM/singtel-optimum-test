@@ -1,12 +1,15 @@
-# singtel-code-test
+# singtel-optimum-code-test
 Singtel Code Test
+
+This is simple maven project done using springboot initializer project
+
+# How to Run?
 
 ## Project can be import as a maven project in any IDE (Intelij or eclips)
 
-### Answers for A 1, 2, 3, 4 can be found by running test class BirdTest.java
+## Run DemoApplication.java class
+## It will demonstrate answers for each questions
 
-### Answers for B 1, 2 ,3 can be found by running test class FishTest.java
+## Unit tests are available in BirdTest.java, ButterflyTest.java and FishTest.java
 
-### Answers for D 1, 2 can be found by running test class ButterflyTest.java
 
-### Answers for E Counting Animals can be found by running DemoApplication.java
