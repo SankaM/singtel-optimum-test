@@ -4,7 +4,9 @@ import com.singtel.priyantha.animal.bird.Bird;
 import com.singtel.priyantha.animal.bird.Chicken;
 import com.singtel.priyantha.animal.bird.Duck;
 import com.singtel.priyantha.animal.bird.Rooster;
+import com.singtel.priyantha.animal.fish.ClownFish;
 import com.singtel.priyantha.animal.fish.Fish;
+import com.singtel.priyantha.animal.fish.Shark;
 
 public class DemoApplication {
 
@@ -15,6 +17,7 @@ public class DemoApplication {
         answersQA3();
 
         answersQB1();
+        answersQB2();
     }
     public static void answerQA1(){
         System.out.println("A. Let’s start with the basics \n");
@@ -59,6 +62,19 @@ public class DemoApplication {
         f1.swim();
     }
 
+    public static void answersQB2(){
+        System.out.println("    Unit tests for QB2. FishTest.java >> testB2abcd()");
+
+        Shark s1 = new Shark();
+        System.out.println("    Shark size: " +s1.getSize());
+        System.out.println("    Shark color: " +s1.getColor());
+        System.out.println("    Shark eat other fish: "+ s1.isEatOtherFish());
+
+        ClownFish c1 = new ClownFish();
+        System.out.println("\n    Clownfish size : "+ c1.getSize());
+        System.out.println("    Clownfish color : "+ c1.getColor());
+        System.out.println("    Clownfish make jokes : "+ c1.isMakeJokes());
+    }
 
 
 }

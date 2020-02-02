@@ -1,6 +1,8 @@
 package com.singtel.priyantha.model;
 
+import com.singtel.priyantha.animal.fish.ClownFish;
 import com.singtel.priyantha.animal.fish.Fish;
+import com.singtel.priyantha.animal.fish.Shark;
 import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;
@@ -43,5 +45,23 @@ public class FishTest {
         Fish f2 = new Fish();
         f2.swim();
         Assert.assertEquals("I am swimming"+System.getProperty("line.separator"), outContent.toString());
+    }
+
+    //Q B2 a. b. c. d. answers
+    @Test
+    public void testB2abcd(){
+
+        Shark shark = new Shark();
+
+        Assert.assertEquals("LARGE", shark.getSize());
+        Assert.assertEquals("GREY", shark.getColor());
+        Assert.assertTrue(shark.isEatOtherFish());
+
+        ClownFish clownFish = new ClownFish();
+
+        Assert.assertEquals("SMALL", clownFish.getSize());
+        Assert.assertEquals("ORANGE", clownFish.getColor());
+        Assert.assertTrue(clownFish.isMakeJokes());
+
     }
 }
