@@ -84,4 +84,21 @@ public class BirdTest {
         Assert.assertEquals("", outContent.toString());
     }
 
+    //Test answer Q3
+    @Test
+    public void testQ3a(){
+
+        Rooster r1 = new Rooster();
+        r1.say();
+        Assert.assertEquals("Cock-a-doodle-doo"+System.getProperty("line.separator"), outContent.toString());
+    }
+
+    // Q 3.B
+    // How is the rooster related to the chicken? >> Rooster is a Chicken. Can be considered as a child of chicken
+
+    // Q 3.C
+    //Can you think of other ways to model a rooster without using inheritance? >>
+    // Yes, By using flag in Chicken class saying isRooster, if it is true then set chicken sounds like a rooster
+
+
 }
