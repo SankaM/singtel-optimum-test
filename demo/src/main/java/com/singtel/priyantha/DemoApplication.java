@@ -1,13 +1,12 @@
 package com.singtel.priyantha;
 
-import com.singtel.priyantha.animal.bird.Bird;
-import com.singtel.priyantha.animal.bird.Chicken;
-import com.singtel.priyantha.animal.bird.Duck;
-import com.singtel.priyantha.animal.bird.Rooster;
+import com.singtel.priyantha.animal.bird.*;
 import com.singtel.priyantha.animal.fish.ClownFish;
 import com.singtel.priyantha.animal.fish.Dolhpin;
 import com.singtel.priyantha.animal.fish.Fish;
 import com.singtel.priyantha.animal.fish.Shark;
+
+import javax.swing.plaf.basic.BasicButtonUI;
 
 public class DemoApplication {
 
@@ -20,6 +19,8 @@ public class DemoApplication {
         answersQB1();
         answersQB2();
         answersQB3();
+
+        answersQD1And2();
     }
     public static void answerQA1(){
         System.out.println("A. Let’s start with the basics \n");
@@ -84,6 +85,26 @@ public class DemoApplication {
         System.out.println("    Dolphin swim without inherit fish");
         Dolhpin d1 = new Dolhpin();
         d1.swim();
+    }
+
+    public static void answersQD1And2(){
+        System.out.println("\n D. Model animals that change their behaviour over time");
+
+        System.out.println("    Unit test for Q D1 and 2 available in ButterflyTest.java");
+
+        Butterfly butterfly = new Butterfly(false);
+        System.out.println("    Butterfly can fly");
+        butterfly.fly();
+
+        System.out.println("    Butterfly cannot make sound");
+        butterfly.sing();
+
+        Butterfly caterpillar = new Butterfly(true);
+        System.out.println("    Caterpillar cannot fly");
+        caterpillar.fly();
+
+        System.out.println("\n  Caterpillar can walk");
+        caterpillar.walk();
     }
 
 
