@@ -5,6 +5,7 @@ import com.singtel.priyantha.animal.bird.Chicken;
 import com.singtel.priyantha.animal.bird.Duck;
 import com.singtel.priyantha.animal.bird.Rooster;
 import com.singtel.priyantha.animal.fish.ClownFish;
+import com.singtel.priyantha.animal.fish.Dolhpin;
 import com.singtel.priyantha.animal.fish.Fish;
 import com.singtel.priyantha.animal.fish.Shark;
 
@@ -18,6 +19,7 @@ public class DemoApplication {
 
         answersQB1();
         answersQB2();
+        answersQB3();
     }
     public static void answerQA1(){
         System.out.println("A. Let’s start with the basics \n");
@@ -74,6 +76,14 @@ public class DemoApplication {
         System.out.println("\n    Clownfish size : "+ c1.getSize());
         System.out.println("    Clownfish color : "+ c1.getColor());
         System.out.println("    Clownfish make jokes : "+ c1.isMakeJokes());
+    }
+
+    public static void answersQB3(){
+        System.out.println("\n    Answers QB3");
+
+        System.out.println("    Dolphin swim without inherit fish");
+        Dolhpin d1 = new Dolhpin();
+        d1.swim();
     }
 
 
