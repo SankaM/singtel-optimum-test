@@ -1,5 +1,9 @@
 package com.singtel.priyantha;
 
+import com.singtel.priyantha.animal.Animal;
+import com.singtel.priyantha.animal.Cat;
+import com.singtel.priyantha.animal.Dog;
+import com.singtel.priyantha.animal.Frog;
 import com.singtel.priyantha.animal.bird.*;
 import com.singtel.priyantha.animal.fish.ClownFish;
 import com.singtel.priyantha.animal.fish.Dolhpin;
@@ -15,6 +19,7 @@ public class DemoApplication {
         answerQA1();
         answersQA2();
         answersQA3();
+        answerQA4();
 
         answersQB1();
         answersQB2();
@@ -105,6 +110,30 @@ public class DemoApplication {
 
         System.out.println("\n  Caterpillar can walk");
         caterpillar.walk();
+    }
+
+    public static void answerQA4(){
+        System.out.println("\n Unit tests for Q A 4 : BirdTest.java >> testQ4a(), testQ4b, testQ4c, testQ4d");
+        System.out.println("    Parrot living with Dog say...");
+
+        Parrot pDog = new Parrot(new Dog());
+        pDog.say();
+
+        System.out.println("    Parrot living with Cat say...");
+
+        Parrot pCat = new Parrot(new Cat());
+        pCat.say();
+
+        System.out.println("    Parrot living near  Rooster say...");
+
+        Parrot pRooster= new Parrot(new Rooster());
+        pRooster.say();
+
+        System.out.println("    4. D) craete new object and add new condition to parrot:say() method");
+
+
+
+
     }
 
 
