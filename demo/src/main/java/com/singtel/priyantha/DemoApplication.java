@@ -4,6 +4,7 @@ import com.singtel.priyantha.animal.bird.Bird;
 import com.singtel.priyantha.animal.bird.Chicken;
 import com.singtel.priyantha.animal.bird.Duck;
 import com.singtel.priyantha.animal.bird.Rooster;
+import com.singtel.priyantha.animal.fish.Fish;
 
 public class DemoApplication {
 
@@ -12,6 +13,8 @@ public class DemoApplication {
         answerQA1();
         answersQA2();
         answersQA3();
+
+        answersQB1();
     }
     public static void answerQA1(){
         System.out.println("A. Let’s start with the basics \n");
@@ -45,5 +48,17 @@ public class DemoApplication {
                 "    >> Yes, By using flag in Chicken class saying isRooster, if it is true then set chicken sounds like a rooster\n");
 
     }
+
+    public static void answersQB1(){
+        System.out.println("\n B. Model fish as well as other swimming animals");
+
+        System.out.println("    Unit tests for QB1 FishTest.java >> testB1b(), testB1c()");
+
+        Fish f1 = new Fish();
+        f1.walk();
+        f1.swim();
+    }
+
+
 
 }
